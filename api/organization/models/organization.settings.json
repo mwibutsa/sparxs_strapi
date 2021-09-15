@@ -1,0 +1,38 @@
+{
+  "kind": "collectionType",
+  "collectionName": "organizations",
+  "info": {
+    "name": "Organization",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    },
+    "website": {
+      "type": "string",
+      "unique": true
+    },
+    "location": {
+      "type": "string",
+      "required": true
+    },
+    "users": {
+      "collection": "organization-user"
+    },
+    "jobs": {
+      "collection": "job"
+    }
+  }
+}

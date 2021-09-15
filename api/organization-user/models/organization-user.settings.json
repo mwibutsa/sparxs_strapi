@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "organization_users",
+  "info": {
+    "name": "User",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "firstName": {
+      "type": "string",
+      "required": true
+    },
+    "lastName": {
+      "type": "string",
+      "required": true
+    },
+    "username": {
+      "type": "string",
+      "unique": true,
+      "required": true
+    },
+    "organization_roles": {
+      "collection": "organization-role"
+    }
+  }
+}

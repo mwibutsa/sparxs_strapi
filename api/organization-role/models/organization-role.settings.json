@@ -1,0 +1,19 @@
+{
+  "kind": "collectionType",
+  "collectionName": "organization_roles",
+  "info": {
+    "name": "OrganizationRole"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    }
+  }
+}
